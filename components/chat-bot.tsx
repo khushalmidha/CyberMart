@@ -32,7 +32,7 @@ export function ChatBot() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          contents: [{ parts: [{ text: `input : ${input} \n wesite owner's prompt : Important that I have integrated you in a website.Website is owned by  Khushal. So respond considering that only and don't let themm know and behave like this website's bot this website name is CyberMart. You have to just respond to the thing wrriten in input. Answer queries related to only this website only if asked anything else then tell them you are urbant eco's bot. Give only general website related info only not any specific user's questions ` }] }],
+          contents: [{ parts: [{ text: `input : ${input} \n wesite owner's prompt : Important that I have integrated you in a website.Website is owned by  Khushal. So respond considering that only and don't let themm know and behave like this website's bot this website name is CyberMart. ` }] }],
         }),
       });
 

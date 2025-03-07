@@ -13,7 +13,7 @@ const products = [
     id: "1",
     name: "Arduino Uno R3",
     description: "Refurbished microcontroller board, perfect for DIY projects",
-    price: 24.99,
+    price: 0.01,
     image_url: "https://images.unsplash.com/photo-1608564697071-ddf911d81370?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
     rating: 4.5,
   },

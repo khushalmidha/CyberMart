@@ -21,9 +21,7 @@ export function CartSheet() {
   const { items, total, updateQuantity, removeItem } = useCart();
 
   const handleCheckout = async () => {
-    try {
-      const stripe = await stripePromise;
-  
+    try { 
       const response = await fetch("/api/checkout", {
         method: "POST",
         headers: {
@@ -31,7 +29,6 @@ export function CartSheet() {
         },
         body: JSON.stringify({ items }),
       });
-  
       if (!response.ok) {
         const errorText = await response.text();
         console.error("Checkout Error:", errorText);

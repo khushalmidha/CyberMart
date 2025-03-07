@@ -20,10 +20,9 @@ export default function AuthPage() {
       } else {
         response = await supabase.auth.signUp({ email, password });
       }
-
       if (response.error) throw response.error;
       alert(isLogin ? "Logged in successfully!" : "Signup successful! Check your email.");
-      router.push("/");
+      window.location.href = "/";
     } catch (error: unknown) {
       if (error instanceof Error) {
         alert(error.message);
@@ -31,6 +30,7 @@ export default function AuthPage() {
         alert("An unknown error occurred.");
       }
     }
+    setLoading(false)
   };
 
   const handleGoogleLogin = async () => {
